@@ -55,3 +55,17 @@ Y ya, con esto tenemos nuestra cuenta para poder usar oTreeHub.
 
 ![GIF 006](../../imgs/01/006.gif)
 
+Aquí ya encontramos un menú lateral con varias opciones en las que a medida del curso se irán profundizando, pero de manera rápida:
+
+    - **Settings:** Nos permite hacer la configuración general de todo el proyecto / encuesta.
+
+    - **Download:** Para descargar nuestro proyecto. Esto lo hace en formato `.otreezip` que es especial de **oTree** y que permite desplegarse en servidores como **Heroku** directamente.
+
+    - **Images:** Para cargar imágenes a nuestro proyecto.
+
+    - **Session config:** Ya es para la parte final, configurar las sesiones (cantidad participantes, por ejemplo) que se van a tener con este proyecto / encuesta.
+
+    - **Apps:** El proyecto o encuesta está compuesto por apps y estas son las que vamos a ir creando. Aquí se pueden crear la cantidad necesaria. _(Para las cuentas gratuitas permite un máximo de 4 apps por proyecto)_.
+
+    - **CSS:** Es código para hacer 'bonita' la encuesta. 
+

@@ -1,0 +1,14 @@
+{{ block title }}
+    Contribución por jugador
+{{ endblock }}
+{{ block content }}
+
+    <p>
+        Este juego de cuentas públicas tiene {{ C.PLAYERS_PER_GROUP }} jugadores por grupo y cada jugador tiene un monto inicial de {{ C.ENDOWMENT }} y hay un multiplicador de {{ C.MULTIPLIER }}.
+    </p>
+
+    {{ formfields }}
+    
+    {{ next_button }}
+
+{{ endblock }}

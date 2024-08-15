@@ -560,7 +560,7 @@ SESSION_CONFIGS = [
 
 #### 4.2.5. Testear
 
-Ya terminado todo lo anterior, solo queda testear nuestra app. 
+Ya terminado todo lo anterior, solo queda testear nuestra app.
 
 Para eso vamos a nuestra terminal y corroboramos que estemos en la carpeta del proyecto que es `session_03` y presionamos `otree devserver` y abrimos en un navegador web.
 

@@ -39,7 +39,11 @@ Al final, cada uno de los jugadores recibirá:
 
 ## 2. Nuestro espacio de trabajo
 
-En Visual Studio Code abrimos la carpeta del curso, buscamos la sesión _`03_groups_publicGoods_trust_games`_ y allí la carpeta de cada uno.
+Para comenzar a trabajar, es necesario descargar este repositorio, para ello usaremos `git`, por lo cual nos dirigimos a la terminal, en Visual Studio Code y escribimos `git clone https://github.com/sEF-uRosario/EX20242.git`.
+
+![DEscargar repositorio](../../imgs/03/000.gif)
+
+Esto nos descarga toda la carpeta donde trabajamos, donde tenemos las clases pasadas. Estando en Visual Studio Code abrimos la carpeta del curso que es `EX20242`, la carpeta `clases`, buscamos la sesión _`03_groups_publicGoods_trust_games`_ y allí la carpeta de cada uno.
 
 ![Carpetas estudiantes](../../imgs/03/001.png)
 

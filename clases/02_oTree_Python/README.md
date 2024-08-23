@@ -15,7 +15,7 @@ Las herramientas que vamos a trabajar son:
 3. Git
 4. Cuenta de Github
 
-Todos los instaladores tienen una copia en la carpeta [Instaladores](instaladores) por si no los quieren descargar desde las páginas y tenerlos a la mano.
+Todos los instaladores tienen una copia en la carpeta [Instaladores](https://drive.google.com/drive/folders/1odlwvZkndUPwH-W0dyjQ7nkoE3nyYWjA?usp=sharing) por si no los quieren descargar desde las páginas y tenerlos a la mano.
 
 ## Windows
 
@@ -87,4 +87,6 @@ Al terminar hacemos lo mismo para instalar Django: `pip3 install django`.
 
 ## Descargar el repositorio de trabajo
 
-Para esto creamos una carpeta en nuestra computadora, en la carpeta que queramos.
+Para esto creamos una carpeta en nuestra computadora, en la carpeta que queramos. La abrimos en VScode y luego abrimos la terminal (menú superior: terminal -> nueva terminal).
+
+En la terminal que abre en la parte inferior escribimos `git clone https://github.com/sEF-uRosario/EX20242.git` y nos creará una copia en nuestra computadora para poder trabajar.

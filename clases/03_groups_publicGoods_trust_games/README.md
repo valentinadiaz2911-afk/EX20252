@@ -35,7 +35,7 @@ Al final, cada uno de los jugadores recibirá:
 
 - Jugador 1: Monto inicial - monto enviado a jugador 2 + monto recibido del jugador 2
 
-- Jugador 2: (Monto recibido del jugador 1 * Multiplicador) + Monto enviado a jugador 1
+- Jugador 2: (Monto recibido del jugador 1 * Multiplicador) - Monto enviado a jugador 1
 
 ## 2. Nuestro espacio de trabajo
 

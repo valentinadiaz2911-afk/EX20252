@@ -91,7 +91,23 @@ Como cada subsesión es diferente _(porque es una aplicación diferente, es una 
 
 Para poner en práctica los conceptos vistos, vamos a realizar un juego conocido como 'Adivina 2/3 del promedio' _(Guess 2/3 of the average)_. <sup><a href="#bib_03">3</a></sup> Aquí se tiene una cantidad de jugadores por grupo, y a cada jugador se le da la oportunidad que de un número entre 0 y el valor máximo, luego se calcula 2/3 del promedio de los números del grupo, y quien más se acerque se lleva el premio.
 
+Entonces comencemos:
 
+### Actualizando nuestro repositorio local
+
+Para comenzar debemos actualizar lo que está en nuestra computadora. Para esto vamos a usar `git` que ya habíamos instalado anteriormente.
+
+Entonces, abrimos nuestro Visual Studio Code, revisamos que estemos en la carpeta donde trabajamos normalmente _(por defecto llamada 'EX20242')_ y allí abrimos una terminal y escribimos
+
+`git pull origin main`
+
+Con esto nuestro repositorio debería actualizarse y mostrarnos ahora en el panel izquierdo la carpeta `04_entendiendo_oTree_parte01` y dentro una carpeta con el nombre de cada estudiante.
+
+![students_dirs](../../imgs/04/012.png)
+
+### Creando el proyecto
+
+Para crear el proyecto para esta sesión de trabajo, vamos al
 
 ## Bibliografía
 

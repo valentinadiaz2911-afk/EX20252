@@ -97,17 +97,45 @@ Entonces comencemos:
 
 Para comenzar debemos actualizar lo que está en nuestra computadora. Para esto vamos a usar `git` que ya habíamos instalado anteriormente.
 
-Entonces, abrimos nuestro Visual Studio Code, revisamos que estemos en la carpeta donde trabajamos normalmente _(por defecto llamada 'EX20242')_ y allí abrimos una terminal y escribimos
+Entonces, abrimos nuestro Visual Studio Code, revisamos que estemos en la carpeta donde trabajamos normalmente _(por defecto llamada 'EX20242')_.
+
+![open_code](../../imgs/04/011.gif)
+
+Revisamos que estén las carpetas de todo el repositorio, entre esto la carpeta con nuestro nombre _(y en donde trabajamos la sesión pasada)_.
+
+Luego, procedemos a ir a la barra superior, al menú Terminal -> Nuevo Terminal y abajo en el terminal ingresamos el comando:
 
 `git pull origin main`
 
+![open_code](../../imgs/04/012.gif)
+
 Con esto nuestro repositorio debería actualizarse y mostrarnos ahora en el panel izquierdo la carpeta `04_entendiendo_oTree_parte01` y dentro una carpeta con el nombre de cada estudiante.
 
-![students_dirs](../../imgs/04/012.png)
+![students_dirs](../../imgs/04/013.png)
 
-### Creando el proyecto
+Ya estando aquí podremos proceder a crear el proyecto.
 
-Para crear el proyecto para esta sesión de trabajo, vamos al
+### Creando el proyecto y la app
+
+Para crear el proyecto para esta sesión de trabajo, vamos a la carpeta con nuestro nombre, presionamos click contrario sobre esta y al desplegar el menú escogemos 'Abrir en terminal integrado'.
+
+Se nos abrirá un terminal, en donde vamos a crear el proyecto 'session_04' escribiendo el comando
+
+`otree startproject session_04`
+
+Nos preguntará si queremos que incluya los juegos de ejemplo y le decimos que no `n`.
+
+Y luego nos movemos a la carpeta del proyecto escribiendo en la terminal
+
+`cd session_04`
+
+Ya estando dentro de la carpeta del proyecto, vamos a crear la app con la que trabajaremos, escribiendo en la terminal
+
+`otree startapp guess_2_3`
+
+Y revisamos en el panel izquierdo que se hayan creado las carpetas y los archivos respectivos.
+
+![start_project_app](../../imgs/04/014.gif)
 
 ## Bibliografía
 

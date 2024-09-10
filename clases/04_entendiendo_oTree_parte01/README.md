@@ -89,7 +89,7 @@ Como cada subsesión es diferente _(porque es una aplicación diferente, es una 
 
 ## Trabajo de práctica: Adivinando 2/3 del promedio
 
-Para poner en práctica los conceptos vistos, vamos a realizar un juego conocido como 'Adivina 2/3 del promedio'.  <sup><a href="#bib_03">3</a></sup> Aquí se tiene un cantidad de jugadores por grupo, y a cada jugador se le da la oportunidad que de un valor entre 0 y el valor máximo, luego se calcula el 2/3 del promedio de los números del grupo, y quien más se acerque se lleva el premio.
+Para poner en práctica los conceptos vistos, vamos a realizar un juego conocido como 'Adivina 2/3 del promedio' _(Guess 2/3 of the average)_. <sup><a href="#bib_03">3</a></sup> Aquí se tiene una cantidad de jugadores por grupo, y a cada jugador se le da la oportunidad que de un número entre 0 y el valor máximo, luego se calcula 2/3 del promedio de los números del grupo, y quien más se acerque se lleva el premio.
 
 
 

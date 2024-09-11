@@ -1,4 +1,4 @@
-# Entendiendo oTree Parte 1: Session, Subsession, Group, Player
+# Entendiendo oTree Parte 1: Session, Subsession, Group, Player - Guess 2/3
 
 Después de haber desarrollado en nuestra [sesión anterior](../03_groups_publicGoods_trust_games/README.md) 2 juegos, haberlos ejecutado y capturar datos, podemos observar trabajo en grupos.
 
@@ -386,6 +386,8 @@ No olvidar cambiar también el idioma y el tipo de moneda.
 
 Y ya, solo queda ejecutar y probar.
 
+### NOTA
+
 Cualquier error que presenten, pueden guiarse de los archivos en la carpeta [jorgeCastillo/session_04](jorgeCastillo/session_04/).
 
 ## Bibliografía
@@ -395,4 +397,3 @@ Cualquier error que presenten, pueden guiarse de los archivos en la carpeta [jor
     <li id="bib_02"> Philipp Chapkovski, “Zurich workshop on online experiments” Repositorio de GitHub. [Online]. Available: <a href="https://github.com/chapkovski/zurich-workshop">https://github.com/chapkovski/zurich-workshop</a>. [Accessed: 02-Sep-2024].
     <li id="bib_03">Wikipedia, “Adivina 2/3 del promedio” Wikipedia. [Online]. Available:  <a href="https://es.wikipedia.org/wiki/Adivina_2/3_del_promedio">https://es.wikipedia.org/wiki/Adivina_2/3_del_promedio</a>. [Accessed: 03-Sep-2024].
 </ol>
-

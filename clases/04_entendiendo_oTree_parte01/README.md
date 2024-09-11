@@ -386,6 +386,10 @@ No olvidar cambiar también el idioma y el tipo de moneda.
 
 Y ya, solo queda ejecutar y probar.
 
+```bash
+otree devserver
+```
+
 ### NOTA
 
 Cualquier error que presenten, pueden guiarse de los archivos en la carpeta [jorgeCastillo/session_04](jorgeCastillo/session_04/).

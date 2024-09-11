@@ -87,7 +87,7 @@ El jugador es el nombre que se le da al participante durante cada subsesión.
 
 Como cada subsesión es diferente _(porque es una aplicación diferente, es una ronda diferente, es una encuesta, etc)_ es aquí donde usamos dentro del archivo `__init__.py` la parte de **Player** para generar variables en donde vamos a guardar los datos a recolectar de la interacción de la persona.
 
-## Trabajo de práctica: Adivinando 2/3 del promedio
+## Actividad Práctica: Adivinando 2/3 del promedio
 
 Para poner en práctica los conceptos vistos, vamos a realizar un juego conocido como 'Adivina 2/3 del promedio' _(Guess 2/3 of the average)_. <sup><a href="#bib_03">3</a></sup> Aquí se tiene una cantidad de jugadores por grupo, y a cada jugador se le da la oportunidad que de un número entre 0 y el valor máximo, luego se calcula 2/3 del promedio de los números del grupo, y quien más se acerque se lleva el premio.
 
@@ -143,7 +143,7 @@ Lo primero que vamos a realizar es eliminar los archivos `.html` que crea por de
 
 Comenzaremos por crear las variables a usar, o sea los 'models'. Aquí es importante tener en cuenta lo visto en cuanto a la jerarquía y la 'lógica del negocio' del juego o actividad a desarrollar para saber si se crean en Constantes, Subsesión, Grupo o Jugador.
 
-> **Pregunta:** ¿ Y para guardar datos en Participante ? _punto de quiz_
+> **Pregunta:** ¿ Y para guardar datos en Participante ? _punto extra_
 
 Luego vamos a crear los 'templates' que vamos a usar para mostrarle a los participantes instrucciones, para recolectar los valores de cada uno y para terminar quién ganó y cuánto.
 

@@ -83,11 +83,31 @@ Estos personalizables son:
 
 - **label** &rarr; Permite establecer la etiqueta o texto que acompaña al campo, como guía para que el participante conozca qué debe ingresar/realizar.
 
-#### settings.py
+## Actividad Práctica: Dilema del prisionero
 
-Por último debemos hacer 2 cosas: configurar `settings.py` y eliminar el archivo `db.sqlite3`.
+Para la actividad práctica vamos a realizar cambios en Models de un ejemplo que ya existe. Para esto es necesario primero tener actualizado nuestra carpeta de trabajo.
 
-Para el archivo `settings.py` colocamos la sesión, quedando así:
+Abrimos la terminal para nuestra carpeta _(click contrario -> abrir terminal integrado)_ y en la terminal escribimos:
+
+```bash
+otree startproject session_05
+```
+
+Y cuando nos pregunte si incluir los juegos de ejemplo, ingresar `y` para que los cree.
+
+![startproject](../../imgs/05/007.png)
+
+Luego, ingresamos a la carpeta del proyecto
+
+```bash
+cd session_05
+```
+
+Y miramos en nuestro lateral izquierdo que se cargan todas las aplicaciones.
+
+![sample_games](../../imgs/05/008.png)
+
+Lo primero que vamos a hacer es modificar el archivo `settings.py` para añadir el de `prisoner`.
 
 ```python
 SESSION_CONFIGS = [
@@ -100,13 +120,21 @@ SESSION_CONFIGS = [
 ]
 ```
 
-No olvidar cambiar también el idioma y el tipo de moneda.
-
-Y ya, solo queda ejecutar y probar.
+Y eliminar el archivo `db.sqlite3`. Luego, procedemos a darle correr para probarlo:
 
 ```bash
 otree devserver
 ```
+
+> **Nota:** Revise bien la interacción de hay en ese momento. Haǵalo abriendo en una pestaña el jugador 1 y en otra el jugador 2.
+
+Después de probado, ahora la actividad consiste en modificar o agregar en la sección de Models de `__init__.py` los campos de Constantes y de Jugador.
+
+![models](../../imgs/05/011.png)
+
+No use el mismo tipo de campo que ya se está usando en cada modelo _(o sea si va a modificar o agregar algo en Constantes que sea de un tipo diferente a los que ya están)_. Recuerde el juego que se está trabajando.
+
+> **Anotación:** ¿ Y si agrego una(s) variable(s) en Grupo ? ¿ Cuál(es) sería ? _punto extra_
 
 ### NOTA
 

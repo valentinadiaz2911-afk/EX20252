@@ -1,0 +1,32 @@
+{{ block title }}Resultados{{ endblock }}
+{{ block content }}
+
+    <p>Aquí los números estimados:</p>
+
+    <p>
+        {{ estimaciones_ordenadas }}
+    </p>
+
+    <p>
+        Los 2/3 del promedio de estos números es {{ group.dos_tercios_promedio }};
+        siendo la estimación más cercana {{ group.mejor_estimacion }}.
+    </p>
+
+    <p>Tú estimación fue {{ player.estimacion }}.</p>
+
+    <p>
+        {{ if player.es_ganador }}
+            {{ if group.n_ganadores > 1 }}
+                Por lo cual tú eres uno de los <b>{{ group.n_ganadores }}</b> ganadores que empataron en la mejor esstimación.
+            {{ else }}
+                Por lo cual tú <b>ganaste</b>.
+            {{ endif }}
+        {{ else }}
+            Por lo cual <b>no ganaste</b>.
+        {{ endif }}
+    Tu pago es <b>{{ player.payoff }}</b>.
+    </p>
+
+    {{ next_button }}
+
+{{ endblock }}

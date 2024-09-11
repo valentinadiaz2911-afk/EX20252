@@ -28,8 +28,9 @@ Este curso está diseñado para introducir a los participantes en las técnicas 
 |---------:|:-----:|----------|
 | 01 | 31 Julio 2024 | [**Formularios:** oTreeHub y oTreeStudio](clases/01_oTreeHub) |
 | - | 07 Agosto 2024 **Feriado** |  |
-| 02 - 03 | 14 Agosto 2024 | [**Herramientas técnicas:** oTree, Python, Git](clases/02_oTree_Python/) |
-| 04 | 21 Agosto 2024 | [**Grupos:** Public Goods & Trust Games](clases/03_groups_publicGoods_trust_games) |
-| - | 28 Agosto 2024 | **Parcial 1** |
+| 02 | 14 Agosto 2024 | [**Herramientas técnicas:** oTree, Python, Git](clases/02_oTree_Python/) |
+| 03 | 21 Agosto 2024 | [**Grupos:** Public Goods & Trust Games](clases/03_groups_publicGoods_trust_games) |
+| 04 | 28 Agosto 2024 | **Parcial 1** |
 | 05 | 04 Septiembre 204 | [**Entendiendo oTree Parte 1:** Session, subsession, group, participant](clases/04_entendiendo_oTree_parte01) |
-| 06 | 11 Septiembre 204 | [**Entendiendo oTree Parte 2:** Models, Templates, Pages](clases/04_entendiendo_oTree_parte02) |
+| 06 | 11 Septiembre 204 | [**Entendiendo oTree Parte 2:** Models](clases/04_entendiendo_oTree_parte02) |
+| 07 | 18 Septiembre 204 | **Entendiendo oTree Parte 3:** Pages y Templates |

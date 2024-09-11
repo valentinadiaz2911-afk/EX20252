@@ -1,0 +1,14 @@
+{{ block title }}Tu estimación{{ endblock }}
+{{ block content }}
+
+    {{ if player.round_number > 1 }}
+        <p>
+            Los valores promedio de los 2/3 de las rondas anteriores son:
+            {{ historico_promedio_2_3 }}
+        </p>
+    {{ endif }}
+
+    {{ formfields }}
+    {{ next_button }}
+
+{{ endblock }}

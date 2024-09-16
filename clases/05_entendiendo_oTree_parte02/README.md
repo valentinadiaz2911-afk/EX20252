@@ -145,7 +145,7 @@ Cualquier error que presenten, pueden guiarse de los archivos en la carpeta [jor
 ## Bibliografía
 
 <ol>
-    <li id="bib_01"> oTree, “Conceptual overview” oTree Documentation. [Online]. Available: <a href="https://otree.readthedocs.io/en/latest/models.html">https://otree.readthedocs.io/en/latest/models.html</a>. [Accessed: 07-Sep-2024].
+    <li id="bib_01"> oTree, “Models” oTree Documentation. [Online]. Available: <a href="https://otree.readthedocs.io/en/latest/models.html">https://otree.readthedocs.io/en/latest/models.html</a>. [Accessed: 07-Sep-2024].
     <li id="bib_02"> Philipp Chapkovski, “Zurich workshop on online experiments” Repositorio de GitHub. [Online]. Available: <a href="https://github.com/chapkovski/zurich-workshop">https://github.com/chapkovski/zurich-workshop</a>. [Accessed: 08-Sep-2024].
     <li id="bib_03">Wikipedia, “Dilema del prisionero” Wikipedia. [Online]. Available:  <a href="https://es.wikipedia.org/wiki/Dilema_del_prisionero">https://es.wikipedia.org/wiki/Dilema_del_prisionero</a>. [Accessed: 08-Sep-2024].
 </ol>

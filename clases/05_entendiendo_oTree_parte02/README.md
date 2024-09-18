@@ -138,7 +138,7 @@ No use el mismo tipo de campo que ya se está usando en cada modelo _(o sea si v
 
 ### NOTA
 
-Para la nota del taller de la sesión deben interactuar con mínimo 4 jugadores (2 grupos), descargar el archivo con los datos en formato `.csv` y enviar al profesor Ferley `heiner.rincon@urosario.edu.co` con el asunto `Taller sesión 5`, y con copiar a `hopkeinst@gmail.com`.
+Para la nota del taller de la sesión deben interactuar con mínimo 4 jugadores (2 grupos), descargar el archivo con los datos en formato `.csv` y enviar al profesor Ferley `heiner.rincon@urosario.edu.co` con el asunto `Taller sesión 5`, y con copiar a `hopkeinst@gmail.com`. Se va a tener en cuenta la rúbrica señalada en el documento [Rubrica_session05](Rubrica_session05.pdf).
 
 Cualquier error que presenten, pueden guiarse de los archivos en la carpeta [jorgeCastillo/session_05](jorgeCastillo/session_05/).
 

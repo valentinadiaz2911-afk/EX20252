@@ -281,6 +281,8 @@ Ahora, la actividad consiste en:
 
 Para la nota del taller de la sesión deben interactuar con mínimo 6 jugadores (3 grupos) e interactuar con ellos, descargar el archivo con los datos en formato `.csv` y enviar al profesor Ferley `heiner.rincon@urosario.edu.co` con el asunto `Taller sesión 6`, y con copia a `hopkeinst@gmail.com`.
 
+![crear_csv](../../imgs/06/010.gif)
+
 Cualquier error que presenten, pueden guiarse de los archivos en la carpeta [jorgeCastillo/session_06](jorgeCastillo/session_06/).
 
 ## Bibliografía

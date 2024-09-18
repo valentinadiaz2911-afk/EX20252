@@ -99,7 +99,9 @@ class ResultsSummary(Page):
         
 
 class Instrucciones(Page):
-    pass
+    @staticmethod
+    def is_displayed(player: Player):
+        return player.round_number == 1
 
 
 page_sequence = [Instrucciones, Choice, ResultsWaitPage, ResultsSummary]

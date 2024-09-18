@@ -66,6 +66,18 @@ class Estimacion(Page):
 ## función 'historico_promedio_2_3' se obtiene los promedios
 ## de los 2/3 del promedio de rondas anteriores (el histórico)
 ## para pasarlo al template y mostrar al participante
+
+class Resultados(Page):
+    @staticmethod
+    def vars_for_template(Player player):
+        calculado = player.opcion_1 + player.opcion_2
+        return dict(
+            "calculado": calculado
+        )
+## Para cuando se muestre la página Resultados envía para mostrar
+## un dato calculado a partir de 2 variables de Jugador, con el
+## nombre 'calculado'. En el template se llama usando llaves:
+## {{ calculado }} para mostrarlo
 ```
 
 Y en el template se puede obtener los datos pasados de la siguiente manera: 
@@ -107,7 +119,7 @@ class Decision(Page):
 ## resultado en una variable del jugador
 ```
 
-### Wait Pages
+### Wait Pages <sup><a href="#bib_01">1</a></sup>
 
 Son las páginas de espera, estas solamente deben definirse y colocarse en la secuencia. Pueden también mostrar mensajes o hacer procesos cuando se llega a esta página.
 
@@ -126,7 +138,7 @@ page_sequence = [Instrucciones, Enviar, EsperaJ1, Devolver, EsperaJ2, Results]
 ## Y aquí se agregan las páginas de espera al orden de mostrar las páginas
 ```
 
-### page_sequence
+### page_sequence <sup><a href="#bib_01">1</a></sup>
 
 Está al final del archivo `__init__.py` y define el orden de cómo se mostrarán las páginas. Es muy importante, porque si no están aquí las páginas no se mostrarán.
 
@@ -134,7 +146,44 @@ Está al final del archivo `__init__.py` y define el orden de cómo se mostrará
 page_sequence = [Instrucciones, Enviar, EsperaJ1, Devolver, EsperaJ2, Results]
 ```
 
-## Templates
+## Templates <sup><a href="#bib_02">2</a></sup>
+
+Los templates, como su nombre lo dicen son plantillas. Son los archivos `.html` que en realidad son una plantilla usando el lenguaje de marcado para organizar lo que queremos mostrar o la interacción que queremos tener con el participante.
+
+Dentro de este encontramos:
+
+- Variables
+- Condicionales (if)
+- Ciclos repetitivos (for)
+- Campos del formulario (formfields)
+
+### Variables
+
+Podemos mostrar las variables que vamos almacenando o que tenemos previamente registradas por la lógica de la aplicación/sesión.
+
+Para acceder a ellas se hace por medio de llaves, como por ejemplo:
+
+```html
+El factor multiplicador es de {{ C.MULTIPLICADOR }}.<br>
+<br>
+Recuerde que el dato que ingresaste es {{ player.dato }}<br>
+```
+
+Se puede acceder de manera directa a las variables de `player`, `group`, `subsession`, `participant`, `session`, `C` sin necesidad de pasarlo por medio de _vars_for_template()_ como se vió en el anterior item de 'Pages'.
+
+### Condicionales (if)
+
+Puedes colocarle lógica para mostrar o no algo en la pantalla, usando el condicional 'if'. Un ejemplo de esto es:
+
+```html
+{{ if p.edad > 18 }}
+El jugador es <b>mayor</b> de edad.
+
+``
+
+> **Nota:** En algunas versiones antiguas de oTree 3, se usan los condicionales y los ciclos for con '{% %}' pero en la versión 5 de oTree se sugiere usar '{{ }}'.
+
+
 
 ### NOTA
 

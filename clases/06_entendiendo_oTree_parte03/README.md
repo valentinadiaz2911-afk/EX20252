@@ -275,7 +275,7 @@ Ahora, la actividad consiste en:
 
 1. Agregar una variable a nivel de jugador, que tenga el valor mínimo de 0 y el valor máximo de 100. Esta va a ser el porcentaje del valor total que si el jugador gana, se le pagará.
 
-2. Agregar una página con las intrucciones del juego. Esta debe ir al inicio _(recuerde el sequence_pages y crear en Pages y el .html)_.
+2. Agregar una página con las intrucciones del juego. Esta debe ir al inicio _(recuerde el sequence_pages y crear en Pages y el .html con el cuerpo necesario)_.
 
 ## NOTA
 

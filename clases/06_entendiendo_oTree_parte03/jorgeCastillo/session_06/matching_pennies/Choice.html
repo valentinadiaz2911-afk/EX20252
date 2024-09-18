@@ -26,7 +26,8 @@
                 <td>{{ p.round_number }}</td>
                 <td>
                   You were the {{ p.role }}
-                  and {{ if p.is_winner }} won {{ else }} lost {{ endif }}
+                  and <b>{{ if p.is_winner }} won {{ else }} lost {{ endif }}</b><br>
+                  Tu factor de porcentaje fue de {{ p.porcentaje }}
                 </td>
             </tr>
         {{ endfor }}

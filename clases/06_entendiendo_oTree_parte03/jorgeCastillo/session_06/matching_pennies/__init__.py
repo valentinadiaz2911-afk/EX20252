@@ -31,7 +31,8 @@ class Player(BasePlayer):
         label="I choose:",
     )
     is_winner = models.BooleanField()
-
+    porcentaje = models.IntegerField(min=0, max=100, label=f"Indique un valor entre 0 y 100 para el porcentaje a pagarle de {C.STAKES} si usted gana")
+    
 
 # FUNCTIONS
 def creating_session(subsession: Subsession):
@@ -61,7 +62,7 @@ def set_payoffs(group: Group):
         is_matcher = p.role == C.MATCHER_ROLE
         p.is_winner = (p1.penny_side == p2.penny_side) == is_matcher
         if subsession.round_number == session.vars['paying_round'] and p.is_winner:
-            p.payoff = C.STAKES
+            p.payoff = C.STAKES * p.porcentaje / 100
         else:
             p.payoff = cu(0)
 
@@ -69,7 +70,7 @@ def set_payoffs(group: Group):
 # PAGES
 class Choice(Page):
     form_model = 'player'
-    form_fields = ['penny_side']
+    form_fields = ['penny_side', 'porcentaje']
 
     @staticmethod
     def vars_for_template(player: Player):
@@ -95,6 +96,10 @@ class ResultsSummary(Page):
             paying_round=session.vars['paying_round'],
             player_in_all_rounds=player_in_all_rounds,
         )
+        
+
+class Instrucciones(Page):
+    pass
 
 
-page_sequence = [Choice, ResultsWaitPage, ResultsSummary]
+page_sequence = [Instrucciones, Choice, ResultsWaitPage, ResultsSummary]

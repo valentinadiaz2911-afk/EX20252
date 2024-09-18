@@ -157,6 +157,26 @@ Dentro de este encontramos:
 - Ciclos repetitivos (for)
 - Campos del formulario (formfields)
 
+También es importante tener en cuenta cómo debe ir el cuerpo del archivo .html.
+
+### Cuerpo del archivo .html
+
+Para trabajar el archivo `.html`, apenas lo creamos debemos colocarle:
+
+```html
+{{ block title }}
+Aquí va el título que le queremos colocar a la página
+{{ endblock }}
+
+{{ block content }}
+Aquí va todo el texto, el formulario, etc que se va a mostrar.
+<br><br>
+Luego viene el botón de siguiente, para la siguiente página.
+{{ next_button }}
+
+{{ endblock }}
+```
+
 ### Variables
 
 Podemos mostrar las variables que vamos almacenando o que tenemos previamente registradas por la lógica de la aplicación/sesión.
@@ -204,7 +224,60 @@ Las personas que están en tu grupo son:
 
 También es un juego de suma cero, en el cual dos(2) jugadores tiran una moneda al aire y luego revelan su resultado. Si ambos coinciden uno de los jugadores _(jugador A)_ se llevara el premio, si no coinciden se lo llevará el otro jugador _(jugador B)_.
 
-### NOTA
+### Actualizar el repositorio
+
+Lo primero que vamos a realizar es dirigirnos a la carpeta que hemos estado trabajando, que tiene el nombre `EX20242`. Abrimos la consola `control + shift + ñ`.
+
+En la terminal escribimos `git pull origin main`. Cuando lo hacemos vemos:
+
+![git_pull](../../imgs/06/004.png)
+
+Cuando obtenemos esto, podemos ver que nos cargó una nueva carpeta dentro de 'clases' y es '06_entendiendo_oTree_parte03'.
+
+Dentro está ubicamos la carpeta con el nombre de cada uno, y nos paramos sobre esta, le damos click contrario y seleccionamos 'Abrir en terminal integrado'.
+
+Nos cargará una nueva terminal abajo. Revisamos y cerramos las terminales anterior _(en el ícono de la caneca que aparece al lado de cada terminal)_.
+
+![cerrar_terminal](../../imgs/06/006.gif)
+
+Ya en la terminal creamos el proyecto _'session_06'_ &rarr; `otree startproject session_06`.
+
+El nos preguntará si carga los juegos de ejemplo. Le decimos que sí `y`.
+
+Luego, nos movemos dentro de la carpeta del proyecto &rarr; `cd session_06`.
+
+Y ya estando dentro, modificamos el archivo `settings.py` para cargar el juego `matching_pennies` reemplazando el diccionario de las sesiones, quedando de la siguiente manera:
+
+```python
+SESSION_CONFIGS = [
+    dict(
+        name = 'matching_pennies',
+        display_name = "Matching Pennies",
+        app_sequence = ['matching_pennies'],
+        num_demo_participants = 2,
+    ),
+]
+```
+
+Y guardamos. **Importante**
+
+Vamos a la terminal y corremos el juego, lo probamos &rarr; `otree devserver`.
+
+![juego_01](../../imgs/06/007.png)
+
+![juego_02](../../imgs/06/008.png)
+
+Después de esto, terminamos el servidor, vamos a la terminal y presionamos `control + c`.
+
+![terminar_server](../../imgs/06/009.gif)
+
+Ahora, la actividad consiste en:
+
+1. Agregar una variable a nivel de jugador, que tenga el valor mínimo de 0 y el valor máximo de 100. Esta va a ser el porcentaje del valor total que si el jugador gana, se le pagará.
+
+2. Agregar una página con las intrucciones del juego. Esta debe ir al inicio _(recuerde el sequence_pages y crear en Pages y el .html)_.
+
+## NOTA
 
 Para la nota del taller de la sesión deben interactuar con mínimo 6 jugadores (3 grupos) e interactuar con ellos, descargar el archivo con los datos en formato `.csv` y enviar al profesor Ferley `heiner.rincon@urosario.edu.co` con el asunto `Taller sesión 6`, y con copia a `hopkeinst@gmail.com`.
 

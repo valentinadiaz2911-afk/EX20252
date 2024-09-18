@@ -178,14 +178,35 @@ Puedes colocarle lógica para mostrar o no algo en la pantalla, usando el condic
 ```html
 {{ if p.edad > 18 }}
 El jugador es <b>mayor</b> de edad.
+{{ else }}
+El jugador es <b>menor</b> de edad.
+{{ endif }}
+```
 
-``
+Se pueden usar comparaciones como igual `==`, diferente `!=`, mayor que `>`, menor que `<`, mayor o igual que `>=`, menor o igual que `<=`.
+
+### Ciclos repetitivos (for)
+
+Cuando tenemos una lista _(números, objetos, texto, etc)_ podemos **iterar** sobre esta, o sea, recorrerla elemento a elemento. 
+
+La manera de hacerlo es:
+
+```html
+Las personas que están en tu grupo son:
+{{ for person in group.get_players() }}
+    - {{ person.name }}<br>
+{{ endfor }}
+```
 
 > **Nota:** En algunas versiones antiguas de oTree 3, se usan los condicionales y los ciclos for con '{% %}' pero en la versión 5 de oTree se sugiere usar '{{ }}'.
 
+## Actividad Práctica: Matching Pennis <sup><a href="#bib_04">4</a></sup>
 
+También es un juego de suma cero, en el cual dos(2) jugadores tiran una moneda al aire y luego revelan su resultado. Si ambos coinciden uno de los jugadores _(jugador A)_ se llevara el premio, si no coinciden se lo llevará el otro jugador _(jugador B)_.
 
 ### NOTA
+
+Para la nota del taller de la sesión deben interactuar con mínimo 6 jugadores (3 grupos) e interactuar con ellos, descargar el archivo con los datos en formato `.csv` y enviar al profesor Ferley `heiner.rincon@urosario.edu.co` con el asunto `Taller sesión 6`, y con copia a `hopkeinst@gmail.com`.
 
 Cualquier error que presenten, pueden guiarse de los archivos en la carpeta [jorgeCastillo/session_06](jorgeCastillo/session_06/).
 

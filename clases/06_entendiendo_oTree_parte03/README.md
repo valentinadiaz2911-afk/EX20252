@@ -1,4 +1,4 @@
-# Entendiendo oTree Parte 3: Pages & Templetes - Matching Pennis
+# Entendiendo oTree Parte 3: Pages & Templetes - Matching Pennies
 
 Después de haber visto en nuestra [sesión anterior](../05_entendiendo_oTree_parte02/README.md) sobre el uso de Models para almacenar los datos de nuestros experimentos, ahora veremos cómo el participante interactúa con cada pantalla que se le muestra y en dónde se realiza la lógica del experimento.
 
@@ -220,7 +220,7 @@ Las personas que están en tu grupo son:
 
 > **Nota:** En algunas versiones antiguas de oTree 3, se usan los condicionales y los ciclos for con '{% %}' pero en la versión 5 de oTree se sugiere usar '{{ }}'.
 
-## Actividad Práctica: Matching Pennis <sup><a href="#bib_04">4</a></sup>
+## Actividad Práctica: Matching Pennies <sup><a href="#bib_04">4</a></sup>
 
 También es un juego de suma cero, en el cual dos(2) jugadores tiran una moneda al aire y luego revelan su resultado. Si ambos coinciden uno de los jugadores _(jugador A)_ se llevara el premio, si no coinciden se lo llevará el otro jugador _(jugador B)_.
 

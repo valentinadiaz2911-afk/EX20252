@@ -34,4 +34,4 @@ Este curso está diseñado para introducir a los participantes en las técnicas 
 | 05 | 04 Septiembre 2024 | [**Entendiendo oTree Parte 1:** Session, subsession, group, participant](clases/04_entendiendo_oTree_parte01) |
 | 06 | 11 Septiembre 2024 | [**Entendiendo oTree Parte 2:** Models](clases/05_entendiendo_oTree_parte02) |
 | 07 | 18 Septiembre 2024 | [**Entendiendo oTree Parte 3:** Pages y Templates](clases/06_entendiendo_oTree_parte03) |
-| 08 | 30 Septiembre 2024 | [**Entendiendo oTree Parte 4:** Multiplayer Games - Bargaining](clases/07_entendiendo_oTree_parte04) |
+| 08 | 30 Octubre 2024 | [**Entendiendo oTree Parte 4:** Multiplayer Games - Bargaining](clases/07_entendiendo_oTree_parte04) |

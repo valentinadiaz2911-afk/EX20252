@@ -168,25 +168,48 @@ class MyWaitPage(WaitPage):
     # Este es el cuerpo de texto que se mostrará debajo del título en la página de espera.
     body_text = "Custom body text"
 ```
+
+## Chat
+
+El chat es otra herramienta muy usada para cuando se trabajan grupos y que permite que los jugadores interactuen.
+
+Para trabajo en grupos solo basta con agregar la etiqueta `{{ chat }}` en el _template_ HTML que se quiera usar. Por defecto oTree conectará y permitirá que solamente los jugadores de un grupo interactúen entre ellos.
+
+```html
+{{ block title }}Your Choice{{ endblock }}
+{{ block content }}
+
+    <!-- Aquí el resto del template>
+    ...
+    -->
+
+    <p>Here you can chat with the other participant.</p>
+
+    {{ chat }}
+
+{{ endblock }}
+```
+<sup><a href="#bib_05">5</a></sup>
+
+Obteniendo un resultado como este:
+
+![img_04](../../imgs/07/004.png)
+
 ## Actividad Práctica: Bargaining
 La negociación cooperativa o **"Cooperative bargaining"** es un proceso en el que dos personas deciden cómo compartir un excedente que pueden generar conjuntamente. Dado que este excedente puede dividirse de diversas maneras, los jugadores deben negociar cuál opción elegir. Este tipo de problemas de distribución se presentan en situaciones como la división de ganancias entre la dirección y los trabajadores, así como en la especificación de términos comerciales entre socios.
 
-## Actividad
 Ahora, la actividad consiste en:
 
-1. Usar los juegos predeterminados de oTree
-2. Configurar "bargaining" en settings.py (2 jugadores por grupo)
-3. Agregar una personalización a la página de espera
-4. Agregar por tiempo a la página de espera: si se demora más de 1 minuto el otro jugador, le coloque un valor de 0 puntos
-5. Agregar un chat para cada grupo
+1. Configurar "bargaining" en settings.py (2 jugadores por grupo).
+2. Agregar una personalización a la página de espera.
+3. Agregar por tiempo a la página de espera: si se demora más de 1 minuto el otro jugador, le coloque un valor de 0 puntos.
+4. Agregar un chat para cada grupo en la parte en que se coloca la cantidad de puntos a aportar.
 
 ## NOTA
 
-Para la nota del taller de la sesión deben interactuar con mínimo 2 jugadores (1 grupos) e interactuar con ellos, descargar el archivo con los datos en formato `.csv` y enviar al profesor Ferley `heiner.rincon@urosario.edu.co` con el asunto `Taller sesión 7`, y con copia a `hopkeinst@gmail.com`.
+Para la nota del taller de la sesión deben interactuar con mínimo 2 jugadores (1 grupos) e interactuar con ellos, deben generar el archivo `.otreezip` enviarlo al profesor Ferley `heiner.rincon@urosario.edu.co` con el asunto `Taller sesión 7`, y con copia a Jorge `hopkeinst@gmail.com`.
 
-![crear_csv](../../imgs/06/010.gif)
-
-Cualquier error que presenten, pueden guiarse de los archivos en la carpeta [jorgeCastillo/session_06](jorgeCastillo/session_06/).
+Cualquier error que presenten, pueden consultar a Jorge por correo electrónico o chat.
 
 ## Bibliografía
 
@@ -195,4 +218,5 @@ Cualquier error que presenten, pueden guiarse de los archivos en la carpeta [jor
     <li id="bib_02"> “Bargaining Icon,” Flaticon. [Online]. Available: <a href="https://www.flaticon.com/free-icon/bargaining_5347789?related_id=5347789&origin=search">https://www.flaticon.com/free-icon/bargaining_5347789?related_id=5347789&origin=search</a>. [Accessed: 29-Oct-2024].
     <li id="bib_03"> Philipp Chapkovski, “Zurich workshop on online experiments” Repositorio de GitHub. [Online]. Available: <a href="https://github.com/chapkovski/zurich-workshop">https://github.com/chapkovski/zurich-workshop</a>. [Accessed: 15-Sep-2024].
     <li id="bib_04">Wikipedia, “Cooperative bargaining.” Wikipedia. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Cooperative_bargaining">https://en.wikipedia.org/wiki/Cooperative_bargaining</a>. [Accessed: 29-Oct-2024].
+    <li id="bib_05">oTree, "Chat" oTree Documentation. [Online]. Available: <a href="https://otree.readthedocs.io/en/latest/multiplayer/chat.html">https://otree.readthedocs.io/en/latest/multiplayer/chat.html</a>. [Accessed: 29-Oct-2024].
 </ol>

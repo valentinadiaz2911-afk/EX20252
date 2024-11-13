@@ -33,7 +33,6 @@ SESSION_CONFIGS = [
 
 #### Passing data between apps
 
-
 En oTree, puedes pasar datos entre diferentes *apps* utilizando variables en *participant o session*. Al almacenar datos en estas variables, puedes acceder a ellos en rondas posteriores de cualquier app. Por ejemplo, puedes guardar información como una recompensa o un puntaje y recuperarla más adelante para su uso en otra app. Esto se realiza mediante las funciones definidas en cada *app* y es útil para crear flujos de trabajo que requieren mantener el estado entre múltiples aplicaciones.
 
 ### Rounds
@@ -46,14 +45,11 @@ Para hacer que un juego se ejecute durante múltiples rondas en oTree, debes est
 
 Puedes obtener el número de la ronda actual usando *player.round_number*. Este atributo está presente en los objetos de subsesión, grupo y jugador, y las rondas comienzan desde 1. Esto te permite hacer seguimientos de la ronda en la que se encuentra un jugador durante la ejecución de tu juego.
 
-
 #### Passing data between rounds or apps
-
 
 Cada ronda tiene objetos separados de *subsesión*, grupo y jugador. Por ejemplo, si estableces **player.my_field = True** en la *ronda 1*, en la *ronda 2*, al intentar acceder a **player.my_field**, su valor será None. Esto se debe a que los objetos de jugador de una ronda son distintos de los de otra ronda. Para acceder a datos de rondas o aplicaciones previas, puedes utilizar las técnicas descritas en la documentación de oTree.
 
-
-#### in_rounds, in_previous_rounds, in_round, etc.
+#### in_rounds, in_previous_rounds, in_round, etc
 
 En oTree, los objetos **Player, Group y Subsession** tienen métodos para acceder a datos de rondas previas:
 
@@ -70,12 +66,11 @@ prev_player = player.in_round(player.round_number - 1)
 
 # Imprime el resultado de la ronda anterior (por ejemplo, el pago del jugador)
 print(prev_player.payoff)
-
 ```
+
 Los métodos como *in_previous_rounds()*, *in_all_rounds()*, *in_rounds()* e *in_round()* funcionan de la misma manera para los objetos de *subsession* y grupo. Sin embargo, no tiene sentido usarlos si se reorganizan los grupos entre rondas, ya que estos métodos presuponen que los grupos no cambian durante el juego. Para acceder a la información de rondas anteriores o entre diferentes grupos, se deben utilizar adecuadamente dependiendo de cómo se gestionen las sesiones y grupos en el experimento.
 
 #### Participant fields
-
 
 Para acceder a los datos de un participante de una aplicación anterior, debes almacenarlos en el objeto *Participant*, ya que estos datos persisten entre aplicaciones. Para hacer esto, ve a la configuración y define `PARTICIPANT_FIELDS`, que es una lista de los nombres de los campos que deseas almacenar en el participante. Los métodos como *in_all_rounds()* solo sirven para acceder a datos de rondas anteriores dentro de la misma aplicación.
 
@@ -90,6 +85,7 @@ Para las variables globales que son las mismas para todos los participantes en u
 Para manejar un número variable de rondas, puedes usar páginas en vivo (Live pages). Alternativamente, puedes establecer `NUM_ROUNDS` en un número alto y luego ocultar el botón `{{ next_button }}` o usar `app_after_this_page` para evitar que los participantes avancen. Sin embargo, ten en cuenta que tener muchas rondas (más de 100) podría generar problemas de rendimiento, por lo que es importante probar bien la aplicación.
 
 ## Treatments
+
 Para asignar participantes a diferentes grupos de tratamiento, puedes usar `creating_session`. Este método se ejecuta cuando se crea la sesión y permite asignar valores aleatorios o específicos a los participantes o grupos. Por ejemplo, puedes asignar un valor booleano (`True` o `False`) a cada jugador para un tratamiento como `time_pressure`. También es posible hacer lo mismo a nivel de grupo utilizando el método `get_groups()`.
 
 ```python
@@ -121,7 +117,6 @@ def creating_session(subsession):
 ### Balanced treatment groups
 
 Para lograr una asignación de tratamientos más balanceada entre jugadores, puedes utilizar itertools.cycle, que permite rotar de forma secuencial entre los valores. Esto asegura que todos los jugadores reciban los tratamientos de manera equitativa en lugar de aleatoria.
-
 
 ```python
 def creating_session(subsession):
@@ -183,6 +178,7 @@ dict(
     num_apples=10  # Parámetro configurable para el número de manzanas en el juego.
 ),
 ```
+
 Cuando creas una sesión en la interfaz de administrador de oTree, se mostrará un cuadro de texto donde puedes modificar ciertos parámetros, como el número de participantes. Además, puedes agregar texto de ayuda con el parámetro `'doc'` para proporcionar instrucciones adicionales a los usuarios que creen sesiones. Esto ayuda a clarificar cómo configurar adecuadamente la sesión al establecer parámetros específicos.
 
 ```python
@@ -199,12 +195,12 @@ dict(
 ),
 ```
 
-Para acceder a los parámetros configurables en tu código, puedes usar `session.config['num_apples']`. 
+Para acceder a los parámetros configurables en tu código, puedes usar `session.config['num_apples']`.
 
 Notas:
+
 - Los parámetros configurables deben ser de tipo número, booleano o cadena.
 - En la sección "Demo" de la administración, las sesiones no son configurables. Esta opción solo está disponible cuando se crean sesiones en las secciones "Sessions" o "Rooms".
-
 
 ## Timeouts
 
@@ -245,6 +241,7 @@ class Page1(Page):
         if timeout_happened:
             player.xyz = False
 ```
+
 #### get_timeout_seconds
 
 El método get_timeout_seconds es una alternativa más flexible a timeout_seconds, ya que permite definir el tiempo de espera dinámicamente, dependiendo de variables como el jugador o la sesión. Esto es útil cuando el límite de tiempo no es constante y puede variar según las condiciones del jugador o de la sesión en curso.
@@ -270,6 +267,7 @@ def get_timeout_seconds(player):
     # Retornamos el valor de 'my_page_timeout_seconds' desde la configuración de la sesión
     return session.config['my_page_timeout_seconds']
 ```
+
 ### Advanced techniques
 
 #### Forms submitted by timeout
@@ -292,6 +290,7 @@ class Start(Page):
         # No olvides agregar 'expiry' en PARTICIPANT_FIELDS para que sea accesible
         participant.expiry = time.time() + 5 * 60
 ```
+
 Para establecer un tiempo de expiración en todas las páginas, puedes almacenar el tiempo de expiración en el participante (o en la sesión) cuando se inicia la tarea, como en `before_next_page` o `creating_session`. Luego, en cada página, puedes usar `get_timeout_seconds` para calcular cuántos segundos quedan hasta que se alcance esa expiración. Esto permite tener un temporizador que controle la duración del proceso en todo el juego o la sesión.
 
 ```python
@@ -322,6 +321,7 @@ class Page1(Page):
         # La página solo se mostrará si el tiempo restante es mayor a 3 segundos
         return get_timeout_seconds(player) > 3
 ```
+
 Puedes cambiar el texto del temporizador utilizando la opción `timer_text` si el límite de tiempo abarca varias páginas. Esto permite personalizar el mensaje para reflejar mejor el contexto de múltiples páginas, por ejemplo, indicando el tiempo restante hasta el final de la sesión o el tiempo restante para completar todas las páginas.
 
 ```python
@@ -374,22 +374,26 @@ El temporizador en oTree está basado en jQuery Countdown y puedes modificar su 
 </script>
 ```
 
-
-
-
-
-
 ## Actividad Práctica: Gift Exchange con Real Effort Task
+
 El **Gift Exchange with a Real Effort Task** es un experimento en el que los participantes deben realizar una tarea de esfuerzo real (como resolver problemas o completar actividades) para obtener una recompensa. Posteriormente, deben decidir cuánto de esa recompensa compartir con otros participantes en el contexto de un intercambio de regalos. Este tipo de experimento se utiliza para estudiar el comportamiento altruista, la cooperación y la motivación detrás de las decisiones económicas y sociales de los individuos en situaciones de intercambio.
 
 Ahora, la actividad consiste en:
 
+- Crear un proyecto desde cero, con el nombre `session_08` dentro de la carpeta de cada uno.
+- Crear mínimo las apps: `juego_esfuerzo` e `intercambio`.
+- La app de `juego_esfuerzo` debe tener 5 rondas en donde va a ser crear una matriz de 5 x 5 y que el jugador ingrese el número mayor de esa matriz.
+- En la app `juego_esfuerzo` cada ronda debe tener una duración de 10 segundos. Si pasado ese tiempo y el jugador no ingresa un número y da en siguiente, se toma el valor de -1.
+- La app de `intercambio` es un modo similar a la de `dictador`, pueden basarse en esta para el envío del valor a compensar. Al llegar a esta app se debe decidir quien va a ser empelador y quien empleado _(formar grupos de 2)_.
+- El salario a repartirse entre empleador y empleado es de 100 puntos.
+- Al terminar la app de `juego_esfuerzo` el empleador recibe 70 puntos y el empleado 30 puntos de los 100 puntos disponibles. Al empleador se le debe mostrar cuantos aciertos tuvo el empleado y con base en esto lo debería recompensar.
+- Al finalizar debe mostrarle a cada uno lo que se le va a pagar.
 
 ## NOTA
 
-Para la nota del taller de la sesión deben interactuar con mínimo 2 jugadores (1 grupos) e interactuar con ellos, deben generar el archivo `.otreezip` enviarlo al profesor Ferley `heiner.rincon@urosario.edu.co` con el asunto `Taller sesión 7`, y con copia a Jorge `hopkeinst@gmail.com`.
+Para la nota del taller de la sesión deben interactuar con mínimo 2 jugadores (1 grupos) e interactuar con ellos, deben generar el archivo `.otreezip` enviarlo al profesor Ferley `heiner.rincon@urosario.edu.co` con el asunto `Taller sesión 8`, y con copia a Jorge `hopkeinst@gmail.com`.
 
-Cualquier error que presenten, pueden consultar a Jorge por correo electrónico o chat.
+Cualquier error, duda, consulta que presenten, pueden consultar a Jorge por correo electrónico o chat.
 
 ## Bibliografía
 
@@ -400,5 +404,3 @@ Aquí tienes la bibliografía en el formato solicitado:
     <li id="bib_02"> McClelland, G.H., “oTree Documentation: Apps & Rounds.” [Online]. Available: <a href="https://otree.readthedocs.io/en/latest/rounds.html#apps-rounds">https://otree.readthedocs.io/en/latest/rounds.html#apps-rounds</a>. [Accessed: 05-Nov-2024].</li>
     <li id="bib_03"> McClelland, G.H., “oTree Documentation: Treatments & Timeouts.” [Online]. Available: <a href="https://otree.readthedocs.io/en/latest/treatments.html#creating-session">https://otree.readthedocs.io/en/latest/treatments.html#creating-session</a>. [Accessed: 05-Nov-2024].</li>
 </ol>
-
-

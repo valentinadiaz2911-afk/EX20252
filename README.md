@@ -35,5 +35,5 @@ Este curso está diseñado para introducir a los participantes en las técnicas 
 | 06 | 11 Septiembre 2024 | [**Entendiendo oTree Parte 2:** Models](clases/05_entendiendo_oTree_parte02) |
 | 07 | 18 Septiembre 2024 | [**Entendiendo oTree Parte 3:** Pages y Templates](clases/06_entendiendo_oTree_parte03) |
 | 08 | 30 Octubre 2024 | [**Entendiendo oTree Parte 4:** Multiplayer Games - Bargaining](clases/07_entendiendo_oTree_parte04) |
-| 09 | 06 Noviembre 2024 | [**Entendiendo oTree Parte 5:** Apps & Rounds - Treatments & Timeouts](clases/08_entendiendo_oTree_parte05) |
-| 10 | 13 Noviembre 2024 | [**Entendiendo oTree Parte 6:** Live Pages y Bots](clases/09_entendiendo_oTree_parte06) |
+| 09 | 13 Noviembre 2024 | [**Entendiendo oTree Parte 5:** Apps & Rounds - Treatments & Timeouts](clases/08_entendiendo_oTree_parte05) |
+| 10 | 20 Noviembre 2024 | [**Entendiendo oTree Parte 6:** Live Pages y Bots](clases/09_entendiendo_oTree_parte06) |

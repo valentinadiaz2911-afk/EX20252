@@ -8,7 +8,7 @@ Este juego de negociación se centra en cómo los participantes interactúan par
 
 ![img_01](../../imgs/07/001.png)<sup><a href="#bib_01">1</a></sup>
 
-Es un juego para 2 personas que son emparejadas de manera aleatoria y son enumerados: *jugador 1 y jugador 2.* 
+Es un juego para 2 personas que son emparejadas de manera aleatoria y son enumerados: *jugador 1 y jugador 2.*
 
 ![img_02](../../imgs/07/002.png)<sup><a href="#bib_02">2</a></sup>
 
@@ -41,6 +41,7 @@ Una vez que todos los jugadores han llegado a la página de espera, oTree llama 
 class MyWaitPage(WaitPage):
     after_all_players_arrive = 'calculate_payoffs'
 ```
+
 ### is_displayed()
 
 La función is_displayed() funciona tal cual como lo vimos en la [sesión anterior](../06_entendiendo_oTree_parte03/README.md#is_diplayed-1).
@@ -68,6 +69,7 @@ def group_by_arrival_time_method(subsession, waiting_players):
 ```
 
 ### Timeouts on wait pages
+
 Los timeouts en una *"wait page"* permiten definir un límite de tiempo para la espera, de manera que si un jugador tarda demasiado en llegar a la página, o no interactúa, el juego puede seguir sin él. Esto es útil para evitar que todos los jugadores se queden esperando indefinidamente si alguien se desconecta o tiene problemas de conexión.
 
 ```python

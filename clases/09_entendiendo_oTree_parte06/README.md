@@ -252,6 +252,7 @@ function liveRecv(data) {
     // Aquí puedes manejar otros tipos de mensajes si es necesario.
 }
 ```
+
 Por cierto, usando una técnica similar, podrías implementar una página de espera personalizada, por ejemplo, una que te permita continuar después de un tiempo determinado, incluso si no todos los jugadores han llegado.
 
 ### General advice about live pages

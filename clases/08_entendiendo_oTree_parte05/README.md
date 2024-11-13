@@ -380,14 +380,16 @@ El **Gift Exchange with a Real Effort Task** es un experimento en el que los par
 
 Ahora, la actividad consiste en:
 
-- Crear un proyecto desde cero, con el nombre `session_08` dentro de la carpeta de cada uno.
-- Crear mínimo las apps: `juego_esfuerzo` e `intercambio`.
-- La app de `juego_esfuerzo` debe tener 5 rondas en donde va a ser crear una matriz de 5 x 5 y que el jugador ingrese el número mayor de esa matriz.
-- En la app `juego_esfuerzo` cada ronda debe tener una duración de 10 segundos. Si pasado ese tiempo y el jugador no ingresa un número y da en siguiente, se toma el valor de -1.
-- La app de `intercambio` es un modo similar a la de `dictador`, pueden basarse en esta para el envío del valor a compensar. Al llegar a esta app se debe decidir quien va a ser empelador y quien empleado _(formar grupos de 2)_.
-- El salario a repartirse entre empleador y empleado es de 100 puntos.
-- Al terminar la app de `juego_esfuerzo` el empleador recibe 70 puntos y el empleado 30 puntos de los 100 puntos disponibles. Al empleador se le debe mostrar cuantos aciertos tuvo el empleado y con base en esto lo debería recompensar.
-- Al finalizar debe mostrarle a cada uno lo que se le va a pagar.
+- [ ] Crear un proyecto desde cero, con el nombre `session_08` dentro de la carpeta de cada uno.
+- [ ] Crear mínimo las apps: `juego_esfuerzo` e `intercambio`.
+- [ ] La app de `juego_esfuerzo` debe tener 5 rondas en donde va a ser crear una matriz de 5 x 5 y que el jugador ingrese el número mayor de esa matriz.
+- [ ] En la app `juego_esfuerzo` cada ronda debe tener una duración de 10 segundos. Si pasado ese tiempo y el jugador no ingresa un número y da en siguiente, se toma el valor de -1.
+- [ ] La app de `intercambio` es un modo similar a la de `dictador`, pueden basarse en esta para el envío del valor a compensar. Al llegar a esta app se debe decidir quien va a ser empelador y quien empleado _(formar grupos de 2)_.
+- [ ] El salario a repartirse entre empleador y empleado es de 100 puntos.
+- [ ] Al terminar la app de `juego_esfuerzo` el empleador recibe 70 puntos y el empleado 30 puntos de los 100 puntos disponibles. Al empleador se le debe mostrar cuantos aciertos tuvo el empleado y con base en esto lo debería recompensar.
+- [ ] Al finalizar debe mostrarle a cada uno lo que se le va a pagar.
+
+_Vamos a comenzarlo en clase y hasta donde se llegue, enviar y luego lo terminan y vuelven a enviar._
 
 ## NOTA
 

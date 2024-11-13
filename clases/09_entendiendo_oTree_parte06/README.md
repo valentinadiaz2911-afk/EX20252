@@ -322,22 +322,23 @@ def live_method(player, data):
 
 En la situación 2 (cuando el jugador carga la página), el cliente recibe un mensaje como:
 
-*{'board': 'X OOXX  O', 'whose_turn': 2}*
+> *{'board': 'X OOXX  O', 'whose_turn': 2}*
 
 Este mensaje contiene:
+
 - `'board'`: El estado actual del tablero, mostrando las marcas de los jugadores (por ejemplo, 'X' y 'O').
 - `'whose_turn'`: El jugador que tiene el turno para hacer el siguiente movimiento, en este caso el jugador 2.
 
 En la situación 1, el jugador recibe la actualización sobre el movimiento que acaba de realizarse, **y** el estado actual del juego.
 
-*{'board': 'X OOXX  O', 'whose_turn': 2, 'square': square, 'id_in_group': player.id_in_group}*
+> *{'board': 'X OOXX  O', 'whose_turn': 2, 'square': square, 'id_in_group': player.id_in_group}*
 
 Este mensaje incluye:
+
 - `'board'`: El estado actual del tablero de juego.
 - `'whose_turn'`: El ID del jugador que tiene el turno de jugar.
 - `'square'`: La casilla que ha sido modificada (por el jugador que hizo el movimiento).
 - `'id_in_group'`: El ID del jugador que realizó el movimiento.
-
 
 El código de JavaScript puede ser "sencillo". No necesita llevar un seguimiento de quién es el turno; simplemente confía en la información que recibe del servidor. Incluso puede redibujar el tablero cada vez que recibe un mensaje.
 
@@ -377,7 +378,6 @@ return payload
 
 Nota que obtenemos el estado del juego dos veces. Esto se debe a que el estado cambia cuando actualizamos nuestros modelos, por lo que necesitamos refrescarlo después de realizar las actualizaciones.
 
-
 ### Troubleshooting
 
 Si llamas a `liveSend` antes de que la página haya terminado de cargarse, obtendrás un error como "liveSend is not defined". Por lo tanto, espera a que se cargue el contenido del DOM (o utiliza `jQuery document.ready`, etc.):
@@ -391,10 +391,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 No envies `liveSend` cuando el usuario haga clic en el botón "next", ya que salir de la página podría interrumpir el `liveSend`. En su lugar, haz que el usuario haga clic en un botón normal que dispare un `liveSend`, y luego realiza `document.getElementById("form").submit();` en tu función `liveRecv`.
 
-
 ## Bots
 
-Los bots en oTree son herramientas automáticas que simulan a los participantes interactuando con tu aplicación. Estos bots navegan por las páginas del experimento, completan los formularios y realizan las acciones necesarias para verificar que todo funcione correctamente, tal como lo haría un participante humano. 
+Los bots en oTree son herramientas automáticas que simulan a los participantes interactuando con tu aplicación. Estos bots navegan por las páginas del experimento, completan los formularios y realizan las acciones necesarias para verificar que todo funcione correctamente, tal como lo haría un participante humano.
 
 El propósito de esta funcionalidad es facilitar las pruebas automáticas, de modo que no tengas que intervenir manualmente para verificar el comportamiento de tu aplicación. Los bots pueden ser configurados para seguir los flujos del experimento, lo que ayuda a detectar posibles errores o problemas en el diseño, como interacciones entre páginas o validación de entradas.
 
@@ -404,11 +403,9 @@ Además, oTree Studio puede generar automáticamente el código para los bots, l
 
 Para agregar bots a tu aplicación (consulta las instrucciones a continuación):
 
-1. En la configuración de tu sesión, establece `use_browser_bots=True`.
+1. En la configuración de tu sesión, establece `use_browser_bots=True`. Esto permite que oTree ejecute bots de navegador automáticamente cuando se inicie una sesión.
 
-Esto permite que oTree ejecute bots de navegador automáticamente cuando se inicie una sesión.
-
-2. Ejecuta el servidor y crea una sesión. Una vez que se abran los enlaces de inicio, las páginas se reproducirán automáticamente con los bots del navegador. 
+2. Ejecuta el servidor y crea una sesión. Una vez que se abran los enlaces de inicio, las páginas se reproducirán automáticamente con los bots del navegador.
 
 Esto hace que los bots interactúen de manera automática con tu aplicación, facilitando la prueba del flujo y las funcionalidades sin necesidad de intervención manual.
 
@@ -417,7 +414,6 @@ Esto hace que los bots interactúen de manera automática con tu aplicación, fa
 En oTree Studio, ve a la sección "Tests" de tu aplicación. Haz clic en el botón para generar automáticamente el código de los bots. Si deseas refinar el código generado (como agregar declaraciones `expect()`), lee las secciones siguientes.
 
 Si estás utilizando un editor de texto, ve a `tests.py`. Aquí puedes ver ejemplos de cómo definir el archivo `tests.py` para personalizar y mejorar las pruebas, incluyendo la adición de expectativas y validaciones sobre el comportamiento de los bots.
-
 
 ### Submitting pages
 
@@ -457,7 +453,6 @@ Es importante **ignorar las páginas de espera** al escribir bots, ya que los bo
 Tu código de bot debe jugar solo **1 ronda** a la vez. oTree se encargará de ejecutar el código automáticamente **NUM_ROUNDS** veces, según la configuración del número de rondas en tu experimento.
 
 Esto significa que no es necesario incluir un ciclo para las rondas en el código del bot, ya que oTree gestionará la repetición de las rondas por ti.
-
 
 ### expect()
 
@@ -506,7 +501,6 @@ class MyPage(Page):
 
 Para probar que está funcionando correctamente, debes asegurarte de que el formulario rechace las entradas que no cumplan con la validación definida. Usando herramientas de prueba como `expect` o `SubmissionMustFail()`, puedes verificar que el mensaje de error se muestre cuando los valores no sean válidos (por ejemplo, cuando la suma no sea 100).
 
-
 ```python
 # Primero, se verifica que la suma de los valores en 'int1' e 'int2' no sea 100,
 # lo que debería generar un error de validación. El bot debe fallar al intentar
@@ -520,11 +514,9 @@ yield pages.MyPage, dict(int1=99, int2=1)
 
 El bot enviará el formulario de `MyPage` dos veces. Si la primera sumisión es exitosa, se generará un error, ya que no debería haberse enviado con datos inválidos. La función `SubmissionMustFail` asegura que la primera sumisión falle, y la segunda es una prueba de que la validación funciona correctamente con datos válidos.
 
-
 ### Checking the HTML
 
 `self.html` contiene el HTML de la página que estás a punto de enviar. Puedes usarlo junto con `expect()` para realizar pruebas más detalladas. Esto te permite verificar que el contenido de la página se genera correctamente antes de enviarla, asegurando que los datos o la estructura HTML cumplen con lo esperado en tu aplicación.
-
 
 ```python
 # Si el jugador es el primero en el grupo, verificamos que 'is_winner' sea True
@@ -545,13 +537,11 @@ yield pages.Results
 
 `self.html` se actualiza con el HTML de la siguiente página después de cada declaración `yield`. Esto significa que después de cada envío, el contenido de `self.html` reflejará la estructura de la página que sigue. Los saltos de línea y los espacios extra se ignoran, por lo que la comparación de cadenas no se ve afectada por diferencias de formato visual. Esta característica es útil para verificar que el contenido de la página se genera correctamente al avanzar en el flujo del juego o la aplicación.
 
-
 ### Automatic HTML checks
 
 Se generará un error si el bot intenta enviar campos de formulario que no se encuentran realmente en el HTML de la página, o si falta un botón de envío en el HTML de la página.
 
 Sin embargo, el sistema de bots no puede ver los campos y botones que se agregan dinámicamente con JavaScript. En estos casos, debes desactivar la comprobación del HTML utilizando `Submission` con el parámetro `check_html=False`. Esto permitirá que el bot envíe la página incluso si los campos o botones no están presentes en el HTML estático inicial, sino que se agregan dinámicamente después.
-
 
 ```python
 # El bot envía la página 'MyPage' con un diccionario que contiene el valor 'foo' igual a 99.
@@ -570,7 +560,6 @@ yield Submission(pages.MyPage, dict(foo=99), check_html=False)
 ```
 
 (Si usas `Submission` sin `check_html=False`, los dos fragmentos de código serían equivalentes. Esto se debe a que la comprobación del HTML se realiza por defecto. Al desactivarla con `check_html=False`, el bot no verifica el HTML de la página antes de enviarla, lo cual es útil cuando el formulario contiene elementos generados dinámicamente con JavaScript.)
-
 
 ### Simulate a page timeout
 
@@ -594,7 +583,7 @@ yield Submission(pages.MyPage, dict(foo=99), timeout_happened=True)
 
 ## NOTA
 
-Para la nota del taller de la sesión deben interactuar con mínimo 2 jugadores (1 grupos) e interactuar con ellos, deben generar el archivo `.otreezip` enviarlo al profesor Ferley `heiner.rincon@urosario.edu.co` con el asunto `Taller sesión 7`, y con copia a Jorge `hopkeinst@gmail.com`.
+Para la nota del taller de la sesión deben interactuar con mínimo 2 jugadores (1 grupos) e interactuar con ellos, deben generar el archivo `.otreezip` enviarlo al profesor Ferley `heiner.rincon@urosario.edu.co` con el asunto `Taller sesión 9`, y con copia a Jorge `hopkeinst@gmail.com`.
 
 Cualquier error que presenten, pueden consultar a Jorge por correo electrónico o chat.
 
@@ -610,6 +599,3 @@ Aquí tienes la bibliografía en el formato solicitado:
     <li id="bib_05"> oTree Project, “oTree Documentation.” [Online]. Available: <a href="https://otree.readthedocs.io/en/latest/">https://otree.readthedocs.io/en/latest/</a>. [Accessed: 11-Nov-2024].</li>
     <li id="bib_06"> oTree Project, “oTree GitHub Repository.” [Online]. Available: <a href="https://github.com/oTree-org/otree">https://github.com/oTree-org/otree</a>. [Accessed: 11-Nov-2024].</li>
 </ol>
-
-
-

@@ -389,7 +389,7 @@ Ahora, la actividad consiste en:
 - [ ] Al terminar la app de `juego_esfuerzo` el empleador recibe 70 puntos y el empleado 30 puntos de los 100 puntos disponibles. Al empleador se le debe mostrar cuantos aciertos tuvo el empleado y con base en esto lo debería recompensar.
 - [ ] Al finalizar debe mostrarle a cada uno lo que se le va a pagar.
 
-_Vamos a comenzarlo en clase y hasta donde se llegue, enviar y luego lo terminan y vuelven a enviar._
+_Vamos a comenzarlo en clase y hasta donde se llegue, enviar y luego lo terminan y vuelven a enviar.
 
 ## NOTA
 

@@ -4,7 +4,7 @@ Después de haber visto en nuestra [sesión anterior](../08_entendiendo_oTree_pa
 
 ## Asset Market Teams
 
-El juego *asset_market_teams* en oTree es un experimento de mercado de activos en equipo, diseñado para estudiar el comportamiento de los participantes al comerciar con activos en un mercado competitivo. Los jugadores están organizados en equipos y pueden comprar y vender activos durante varias rondas, mientras el valor del activo fluctúa o sigue una tendencia predefinida. 
+El juego *asset_market_teams* en oTree es un experimento de mercado de activos en equipo, diseñado para estudiar el comportamiento de los participantes al comerciar con activos en un mercado competitivo. Los jugadores están organizados en equipos y pueden comprar y vender activos durante varias rondas, mientras el valor del activo fluctúa o sigue una tendencia predefinida.
 
 El objetivo es maximizar las ganancias al anticipar movimientos del mercado, tomar decisiones de compra o venta estratégicas, y gestionar el riesgo en conjunto con los compañeros de equipo. Este tipo de juego se utiliza para investigar la formación de burbujas financieras, el impacto de la coordinación en decisiones de inversión, y cómo los participantes reaccionan ante la incertidumbre y las señales del mercado.
 

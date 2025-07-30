@@ -6,7 +6,7 @@ Curso 2025-2
 
 **Nos encontraremos:** Todos los miércoles: 17:00 – 20:00 en el Laboratorio de Economía Experimental UR 2do piso Edificio Suramericana (Av. Jiménez 8A-49)
 
-**Dirigido por:** PhD _(c)_ Heiner Ferley Rincón Ramírez - [heiner.rincon@urosario.edu.co](mailto:heiner.rincon@urosario.edu.co) - [https://sites.google.com/view/ferleyrincon](https://sites.google.com/view/ferleyrincon)
+**Dirigido por:** PhD Heiner Ferley Rincón Ramírez - [heiner.rincon@urosario.edu.co](mailto:heiner.rincon@urosario.edu.co) - [https://sites.google.com/view/ferleyrincon](https://sites.google.com/view/ferleyrincon)
 
 **Entrega de actividades y parciales:** Todas las entregas correspondientes a actividades y parciales deberán enviarse exclusivamente al correo institucional indicado *([heiner.rincon@urosario.edu.co](mailto:heiner.rincon@urosario.edu.co))*. Solo se evaluarán aquellas entregas recibidas por este medio. Cualquier envío realizado por otros canales, sin autorización previa del docente, será descartado y no recibirá retroalimentación
 

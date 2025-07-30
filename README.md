@@ -28,7 +28,7 @@ Este curso está diseñado para introducir a los participantes en las técnicas 
 
 | Sesión # | Fecha | Práctica |
 |:--------:|:-----:|:---------|
-| 01 - 02 | 30 Jul 2025 | [**Ultimatum & Dictador:** Tools (oTree, Python & Git) - Forms & Simple survey ](clases\01_Tools_oTree_Python_GIT_02_Forms_SimpleSurvey\README.md) |
+| 01 - 02 | 30 Jul 2025 | [**Ultimatum & Dictador:** Tools (oTree, Python & Git) - Forms & Simple survey ](clases\01_Tools_oTree_Python_GIT_02_Forms_SimpleSurvey) |
 | 03 | 06 Ago 2025 | [**Confianza:** Groups & Trust Games](clases\03_Groups_TrustGames) |
 | 04 | 13 Ago 2025 | [**Bienes Públicos:** Session, Subsession, Group & Participant](clases\04_Sessions_Subsessions_Groups_Participant) |
 | EX1 | 20 Ago 2025 | **Examen 1** |

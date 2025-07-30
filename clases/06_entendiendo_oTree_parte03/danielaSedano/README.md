@@ -1,1 +1,0 @@
-# Daniela Sedano

@@ -1,1 +1,0 @@
-# Gabriela López

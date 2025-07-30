@@ -436,12 +436,13 @@ Mientras que la mayoría de los comandos de Git se ejecutan desde la terminal, e
 
 ❗**Nota:** `Recordar usar el método de entrega de actividades y parciales indicado en la sección de "Entrega de actividades y parciales" del curso.` *[Click para visitar "Entrega de actividades y parciales" en la introducción del curso.](../../README.md)*
 
-1. [Formulario Utimatum/Dictador](https://docs.google.com/forms/d/14k2UL4Q-cAugpEqzCQQbgv8nZ1NNlDdCl8Pml1TlQuo/viewform?edit_requested=true)
+1. [QUIZ Utimatum/Dictador](https://docs.google.com/forms/d/14k2UL4Q-cAugpEqzCQQbgv8nZ1NNlDdCl8Pml1TlQuo/viewform?edit_requested=true)
 
 2. Ultimatum Game:
 
-    - Versión A: 
-        a. Crea un proyecto llamada `ultimatum_game`.
+    - Versión A:
+
+        a. Crea un proyecto llamado `ultimatum_game`.
 
         b. Dentro del proyecto, crea una app llamada `ultimatum_A`.
         
@@ -454,7 +455,8 @@ Mientras que la mayoría de los comandos de Git se ejecutan desde la terminal, e
     ---
 
     - Versión B: 
-        a. Crea un proyecto llamada `ultimatum_game`.
+    
+        a. Crea un proyecto llamado `ultimatum_game`.
 
         b. Dentro del proyecto, crea una app llamada `ultimatum_B`.
 

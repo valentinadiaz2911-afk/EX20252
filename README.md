@@ -2,11 +2,13 @@
 
 ## Economía Experimental
 
-Curso 2024-2
+Curso 2025-2
 
 **Nos encontraremos:** Todos los miércoles: 17:00 – 20:00 en el Laboratorio de Economía Experimental UR 2do piso Edificio Suramericana (Av. Jiménez 8A-49)
 
 **Dirigido por:** PhD _(c)_ Heiner Ferley Rincón Ramírez - [heiner.rincon@urosario.edu.co](mailto:heiner.rincon@urosario.edu.co) - [https://sites.google.com/view/ferleyrincon](https://sites.google.com/view/ferleyrincon)
+
+**Entrega de actividades y parciales:** Todas las entregas correspondientes a actividades y parciales deberán enviarse exclusivamente al correo institucional indicado *([heiner.rincon@urosario.edu.co](mailto:heiner.rincon@urosario.edu.co))*. Solo se evaluarán aquellas entregas recibidas por este medio. Cualquier envío realizado por otros canales, sin autorización previa del docente, será descartado y no recibirá retroalimentación
 
 ### Del Curso
 
@@ -25,15 +27,20 @@ Este curso está diseñado para introducir a los participantes en las técnicas 
 #### Cronograma de las Prácticas
 
 | Sesión # | Fecha | Práctica |
-|---------:|:-----:|----------|
-| 01 | 31 Julio 2024 | [**Formularios:** oTreeHub y oTreeStudio](clases/01_oTreeHub) |
-| - | 07 Agosto 2024 **Feriado** |  |
-| 02 | 14 Agosto 2024 | [**Herramientas técnicas:** oTree, Python, Git](clases/02_oTree_Python/) |
-| 03 | 21 Agosto 2024 | [**Grupos:** Public Goods & Trust Games](clases/03_groups_publicGoods_trust_games) |
-| 04 | 28 Agosto 2024 | **Parcial 1** |
-| 05 | 04 Septiembre 2024 | [**Entendiendo oTree Parte 1:** Session, subsession, group, participant](clases/04_entendiendo_oTree_parte01) |
-| 06 | 11 Septiembre 2024 | [**Entendiendo oTree Parte 2:** Models](clases/05_entendiendo_oTree_parte02) |
-| 07 | 18 Septiembre 2024 | [**Entendiendo oTree Parte 3:** Pages y Templates](clases/06_entendiendo_oTree_parte03) |
-| 08 | 30 Octubre 2024 | [**Entendiendo oTree Parte 4:** Multiplayer Games - Bargaining](clases/07_entendiendo_oTree_parte04) |
-| 09 | 13 Noviembre 2024 | [**Entendiendo oTree Parte 5:** Apps & Rounds - Treatments & Timeouts](clases/08_entendiendo_oTree_parte05) |
-| 10 | 20 Noviembre 2024 | [**Entendiendo oTree Parte 6:** Live Pages y Bots](clases/09_entendiendo_oTree_parte06) |
+|:--------:|:-----:|:---------|
+| 01 - 02 | 30 Jul 2025 | [**Ultimatum & Dictador:** Tools (oTree, Python & Git) - Forms & Simple survey ](clases\01_Tools_oTree_Python_GIT_02_Forms_SimpleSurvey\README.md) |
+| 03 | 06 Ago 2025 | [**Confianza:** Groups & Trust Games](clases\03_Groups_TrustGames) |
+| 04 | 13 Ago 2025 | [**Bienes Públicos:** Session, Subsession, Group & Participant](clases\04_Sessions_Subsessions_Groups_Participant) |
+| EX1 | 20 Ago 2025 | **Examen 1** |
+| 05 | 27 Ago 2025 | [**Los métodos experimentales:** Models](clases\05_Models) |
+| 06 | 03 Sep 2025 | [**Coordinación:** Pages](clases\06_Pages) |
+| 07 | 10 Sep 2025 | [**Neuroeconomía:** Templates](clases\07_Templates) |
+| 08 | 17 Sep 2025 | [**Preferencias Sociales:** Multiplayer Games](clases\08_MultiplayerGames) |
+| 09 | 24 Sep 2025 | [**Normas Sociales:** Apps & Rounds](clases\09_Apps_Rounds) |
+| EX2 | 01 Oct 2025 | **Examen 2** |
+| 10 | 08 Oct 2025 | [**Preferencias Temporales y de Riesgos:** Treatments & Timeouts](clases\10_Treatments_Timeouts) |
+| 11 | 15 Oct 2025 | [**Experimentos de Mercado:** Chat & Live Pages](clases\11_Chat_LivePages) |
+| 12 | 22 Oct 2025 | [**Subastas:** Bots](clases\12_Bots) |
+| 13 | 29 Oct 2025 | [**Torneos:** Admin, Rooms & Currency](clases\13_Admin_Rooms_Currency) |
+| 14 | 05 Nov 2025 | [**Experimentos Laborales:** MTurk & Prolific](clases\14_MTurk_Prolific) |
+| EXF | 12 Nov 2025 | **Examen Final** |

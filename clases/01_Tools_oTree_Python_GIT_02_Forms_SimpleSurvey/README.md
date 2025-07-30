@@ -467,4 +467,4 @@ Mientras que la mayoría de los comandos de Git se ejecutan desde la terminal, e
 
 Dependiendo de la versión asignada, deberás cumplir con las tareas correspondientes a cada una y para una mejor verificación de lo realizado tomar una ScreenShot al finalizar cada inciso, adjuntar las imágenes con el proyecto creado en un zip al correo designado.
 
-[Rúbrica de calificación](clases\01_Tools_oTree_Python_GIT_02_Forms_SimpleSurvey\Rubrica_Taller_Ultimatum.pdf)
+[Rúbrica de calificación](\Rubrica_Taller_Ultimatum.pdf)

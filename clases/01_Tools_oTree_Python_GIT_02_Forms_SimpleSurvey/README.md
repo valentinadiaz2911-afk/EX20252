@@ -1,4 +1,6 @@
-# Tools: oTree, Python y GIT
+# Taller 1 - Tools: oTree, Python y GIT
+
+## Fecha de entrega: 6 Agosto 2025
 
 ## Introducción a Python
 
@@ -434,11 +436,13 @@ Mientras que la mayoría de los comandos de Git se ejecutan desde la terminal, e
 
 ## 📚 Actividad practica 
 
+
+
 ❗**Nota:** `Recordar usar el método de entrega de actividades y parciales indicado en la sección de "Entrega de actividades y parciales" del curso.` *[Click para visitar "Entrega de actividades y parciales" en la introducción del curso.](../../README.md)*
 
 1. [QUIZ Utimatum/Dictador](https://docs.google.com/forms/d/14k2UL4Q-cAugpEqzCQQbgv8nZ1NNlDdCl8Pml1TlQuo/viewform?edit_requested=true)
 
-2. Ultimatum Game:
+2. Ultimatum Game: 
 
     - Versión A:
 
@@ -467,6 +471,16 @@ Mientras que la mayoría de los comandos de Git se ejecutan desde la terminal, e
         e. Comprueba que el experimento funciona correctamente ejecutando el comando `otree devserver` y accediendo a la URL proporcionada.
 
 
+En la siguiente lista se realiza la asignación de la versión a entregar. La asignación se realizó **al azar** y a **cada ID** de le asignó **una versión**: 
+
+<img src="../../imgs/1/Lista Taller 1.png" style="margin: 20px;">
+
 Dependiendo de la versión asignada, deberás cumplir con las tareas correspondientes a cada una y para una mejor verificación de lo realizado tomar una ScreenShot al finalizar cada inciso, adjuntar las imágenes con el proyecto creado en un zip al correo designado.
 
-[Rúbrica de calificación](Rubrica_Taller_Ultimatum.pdf)
+
+
+Enlaces de interés:
+
+- [Apoyo Taller 1](https://youtu.be/SySYyPTUb5Q)
+
+- [Rúbrica de calificación](Rubrica_Taller_Ultimatum.pdf)

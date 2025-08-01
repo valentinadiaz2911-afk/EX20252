@@ -8,7 +8,7 @@ Curso 2025-2
 
 **Dirigido por:** PhD Heiner Ferley Rincón Ramírez - [heiner.rincon@urosario.edu.co](mailto:heiner.rincon@urosario.edu.co) - [https://sites.google.com/view/ferleyrincon](https://sites.google.com/view/ferleyrincon)
 
-**Entrega de actividades y parciales:** Todas las entregas correspondientes a actividades y parciales deberán enviarse exclusivamente al correo institucional indicado *([heiner.rincon@urosario.edu.co](mailto:heiner.rincon@urosario.edu.co))*. Solo se evaluarán aquellas entregas recibidas por este medio. Cualquier envío realizado por otros canales, sin autorización previa del docente, será descartado y no recibirá retroalimentación
+**Entrega de actividades y parciales:** Todas las entregas correspondientes a actividades y parciales deberán enviarse exclusivamente al correo institucional indicado *([heiner.rincon@urosario.edu.co](mailto:heiner.rincon@urosario.edu.co))*, con copia al correo *([josexd210711@gmail.com](mailto:josexd210711@gmail.com))*. Solo se evaluarán aquellas entregas recibidas por este medio. Cualquier envío realizado por otros canales, sin autorización previa del docente, será descartado y no recibirá retroalimentación
 
 ### Del Curso
 

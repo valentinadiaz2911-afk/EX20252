@@ -1,0 +1,14 @@
+{{ block title }}
+    Devolver Dinero
+{{ endblock }}
+{{ block content }}
+
+    <p>
+        Tú eres el jugador 2. El jugador 1 te ha enviado {{ group.dinero_enviado }} y al multiplicarlo usted recibirá {{ dinero_multiplicado }}.
+    </p>
+
+    {{ formfields }}
+
+    {{ next_button }}
+
+{{ endblock }}

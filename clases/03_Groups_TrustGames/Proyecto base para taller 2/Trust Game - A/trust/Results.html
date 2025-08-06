@@ -1,0 +1,26 @@
+{{ block title }}
+    Resultados
+{{ endblock }}
+
+{{ block content }}
+
+    {{ if player.id_in_group == 1 }}
+        <p>
+            Tú enviaste al jugador 2 {{ group.dinero_enviado }}.
+            El jugador 2 devolvió {{ group.dinero_devuelto }}.
+        </p>
+    {{ else }}
+        <p>
+            El jugador 1 te envió {{ group.dinero_enviado }}.
+            Tú le devolviste {{ group.dinero_devuelto }}.
+        </p>
+
+    {{ endif }}
+
+    <p>
+        Entonces, el total tuyo es {{ player.payoff }}.
+    </p>
+
+    {{ next_button }}
+
+{{ endblock }}

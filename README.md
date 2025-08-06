@@ -29,18 +29,18 @@ Este curso está diseñado para introducir a los participantes en las técnicas 
 | Sesión # | Fecha | Práctica |
 |:--------:|:-----:|:---------|
 | 01 - 02 | 30 Jul 2025 | [**Ultimatum & Dictador:** Tools (oTree, Python & Git) - Forms & Simple survey ](clases/01_Tools_oTree_Python_GIT_02_Forms_SimpleSurvey) |
-| 03 | 06 Ago 2025 | [**Confianza:** Groups & Trust Games](clases\03_Groups_TrustGames) |
-| 04 | 13 Ago 2025 | [**Bienes Públicos:** Session, Subsession, Group & Participant](clases\04_Sessions_Subsessions_Groups_Participant) |
+| 03 | 06 Ago 2025 | [**Confianza:** Groups & Trust Games](clases/03_Groups_TrustGames) |
+| 04 | 13 Ago 2025 | [**Bienes Públicos:** Session, Subsession, Group & Participant](clases/04_Sessions_Subsessions_Groups_Participant) |
 | EX1 | 20 Ago 2025 | **Examen 1** |
-| 05 | 27 Ago 2025 | [**Los métodos experimentales:** Models](clases\05_Models) |
-| 06 | 03 Sep 2025 | [**Coordinación:** Pages](clases\06_Pages) |
-| 07 | 10 Sep 2025 | [**Neuroeconomía:** Templates](clases\07_Templates) |
-| 08 | 17 Sep 2025 | [**Preferencias Sociales:** Multiplayer Games](clases\08_MultiplayerGames) |
-| 09 | 24 Sep 2025 | [**Normas Sociales:** Apps & Rounds](clases\09_Apps_Rounds) |
+| 05 | 27 Ago 2025 | [**Los métodos experimentales:** Models](clases/05_Models) |
+| 06 | 03 Sep 2025 | [**Coordinación:** Pages](clases/06_Pages) |
+| 07 | 10 Sep 2025 | [**Neuroeconomía:** Templates](clases/07_Templates) |
+| 08 | 17 Sep 2025 | [**Preferencias Sociales:** Multiplayer Games](clases/08_MultiplayerGames) |
+| 09 | 24 Sep 2025 | [**Normas Sociales:** Apps & Rounds](clases/09_Apps_Rounds) |
 | EX2 | 01 Oct 2025 | **Examen 2** |
-| 10 | 08 Oct 2025 | [**Preferencias Temporales y de Riesgos:** Treatments & Timeouts](clases\10_Treatments_Timeouts) |
-| 11 | 15 Oct 2025 | [**Experimentos de Mercado:** Chat & Live Pages](clases\11_Chat_LivePages) |
-| 12 | 22 Oct 2025 | [**Subastas:** Bots](clases\12_Bots) |
-| 13 | 29 Oct 2025 | [**Torneos:** Admin, Rooms & Currency](clases\13_Admin_Rooms_Currency) |
-| 14 | 05 Nov 2025 | [**Experimentos Laborales:** MTurk & Prolific](clases\14_MTurk_Prolific) |
+| 10 | 08 Oct 2025 | [**Preferencias Temporales y de Riesgos:** Treatments & Timeouts](clases/10_Treatments_Timeouts) |
+| 11 | 15 Oct 2025 | [**Experimentos de Mercado:** Chat & Live Pages](clases/11_Chat_LivePages) |
+| 12 | 22 Oct 2025 | [**Subastas:** Bots](clases/12_Bots) |
+| 13 | 29 Oct 2025 | [**Torneos:** Admin, Rooms & Currency](clases/13_Admin_Rooms_Currency) |
+| 14 | 05 Nov 2025 | [**Experimentos Laborales:** MTurk & Prolific](clases/14_MTurk_Prolific) |
 | EXF | 12 Nov 2025 | **Examen Final** |

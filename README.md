@@ -24,6 +24,10 @@ Este curso está diseñado para introducir a los participantes en las técnicas 
 
 ### Del Componente Práctico
 
+#### Calificaciones
+
+En este componente podrás encontrar las notas de las actividades y parciales relacionados con el curso -> [**Calificaciones**](https://docs.google.com/spreadsheets/d/1P0nX6XBa_NOPOorAD-sy9Htr27JHop6D5AHbxVWryMw/edit?usp=sharing)
+
 #### Cronograma de las Prácticas
 
 | Sesión # | Fecha | Práctica |

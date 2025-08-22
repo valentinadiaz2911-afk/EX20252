@@ -147,7 +147,7 @@ Dependiendo de la versión asignada, deberás cumplir con las tareas correspondi
 
 Enlaces de interés:
 
-- [Apoyo Taller 2]()
+- [Apoyo Taller 2](https://youtu.be/NPiw22ut3I0)
 
 - [Rúbrica de calificación](Rubrica_Taller_Trust.pdf)
 

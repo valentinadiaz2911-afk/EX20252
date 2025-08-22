@@ -176,6 +176,6 @@ Dependiendo de la versión asignada, deberás cumplir con las tareas correspondi
 
 Enlaces de interés:
 
-- [Apoyo Taller 3]()
+- [Apoyo Taller 3](https://youtu.be/IeofyW8uRzA)
 
 - [Rúbrica de calificación](Rubrica_Taller_PublicGoods.pdf)

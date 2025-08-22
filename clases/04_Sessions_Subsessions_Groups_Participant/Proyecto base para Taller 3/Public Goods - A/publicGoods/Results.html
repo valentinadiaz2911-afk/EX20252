@@ -1,0 +1,19 @@
+{{ block title }}
+    Resultados obtenidos
+{{ endblock }}
+
+{{ block content }}
+
+    <p>
+        Usted inicio el juego con {{ C.ENDOWMENT }}.
+        De este valor, usted contribuyó con {{ player.contribution }}.
+        En total, en todo su grupo se recogió {{ group.total_contribution }}.
+        Por lo tanto, a cada jugador le corresponde de la repartición {{ group.individual_share }}.
+        Y a usted, le corresponde un pago de {{ player.payoff }}.
+    </p>
+
+    {{ next_button }}
+    
+{{ endblock }}
+
+

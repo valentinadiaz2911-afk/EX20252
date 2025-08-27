@@ -34,13 +34,13 @@ class Player(BasePlayer):
 
 
 ## FUNCTIONS
-def dinero_devuelto_choices():
+def dinero_devuelto_choices(group: Group):
     return currency_range(0, group.dinero_enviado * C.MULTIPLIER, 1)
 
 
 def set_payoffs(group: Group):
-    p1 = group.get_player_by_id()
-    p2 = group.get_player_by_id()
+    p1 = group.get_player_by_id(1)
+    p2 = group.get_player_by_id(2)
     p1.payoff = C.ENDOWMENT - group.dinero_enviado + group.dinero_devuelto
     p2.payoff = group.dinero_enviado * C.MULTIPLIER - group.dinero_devuelto
 
@@ -73,7 +73,7 @@ class Devolver(Page):
 
     @staticmethod
     def vars_for_template(player: Player):
-        group = player
+        group = player.group
         return dict(dinero_multiplicado = (group.dinero_enviado * C.MULTIPLIER))
 
 

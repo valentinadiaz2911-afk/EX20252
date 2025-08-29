@@ -114,20 +114,20 @@ Ejemplo con opciones:
 
     - Versión A:
 
-        a. 
+        a.
 
     ---
 
     - Versión B:
 
-        a. 
+        a.
 
 
 
 
 En la siguiente lista se realiza la asignación de la versión a entregar. La asignación se realizó **al azar** y a **cada ID** de le asignó **una versión**: 
 
-<img src="../../imgs/" style="margin: 20px;">
+<img src="../../imgs/4/Lista_Taller_4.png" style="margin: 20px;">
 
 Dependiendo de la versión asignada, deberás cumplir con las tareas correspondientes a cada una y para una mejor verificación de lo realizado tomar una ScreenShot al finalizar cada inciso, **adjuntar las imágenes con el proyecto creado en un zip al correo designado**.
 

@@ -1,6 +1,6 @@
 # Taller 4 - Models
 ---
-## Fecha de entrega: 27 Agosto 2025
+## Fecha de entrega: 3 Septiembre 2025
 ---
 
 En **oTree**, los `models` son las clases y variables que definen la **lógica y los datos del experimento**.  

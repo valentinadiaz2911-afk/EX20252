@@ -102,6 +102,53 @@ Ejemplo con opciones:
 - [Guía rápida de oTree en español (GitHub)](https://github.com/otree-org/otree)
 
 ---
+## El juego de 2/3 del promedio
+
+El **juego de 2/3 del promedio** es un experimento muy usado en economía y teoría de juegos para estudiar cómo las personas razonan sobre lo que harán los demás.  
+
+## Reglas básicas
+1. Cada jugador elige **un número entero** dentro de un rango (normalmente entre 0 y 100).  
+2. Se calcula el **promedio** de todos los números elegidos.  
+3. El ganador es el jugador cuyo número esté más cerca de **2/3 de ese promedio**.  
+
+---
+
+## Ejemplo
+Supongamos que hay 3 jugadores y eligen:  
+- Jugador A: 30  
+- Jugador B: 60  
+- Jugador C: 90  
+
+El promedio es:  
+\[
+(30 + 60 + 90) / 3 = 60
+\]
+
+2/3 del promedio =  
+\[
+60 \times \tfrac{2}{3} = 40
+\]
+
+El número más cercano a **40** es **30** → gana el **Jugador A**.  
+
+---
+
+## La lógica detrás
+- Si todos eligen al azar, el promedio rondará 50, entonces 2/3 de eso sería ~33.  
+- Si la gente piensa en esto, tenderán a elegir números más bajos.  
+- Si todos son **perfectamente racionales** y creen que los demás también lo son, la única solución estable (equilibrio de Nash) es que todos elijan **0**.  
+
+---
+
+## Niveles de razonamiento
+Esto muestra hasta qué nivel de razonamiento estratégico llega cada persona:  
+
+- **Nivel 0:** Elige al azar o cerca de 50.  
+- **Nivel 1:** Piensa: “El promedio será 50, entonces yo elijo 33”.  
+- **Nivel 2:** Piensa: “Los demás van a elegir 33, entonces yo elijo 22”.  
+- **Nivel n:** Va ajustando hacia abajo hasta acercarse a **0**.  
+
+---
 
 ## 📚 Actividad practica 
 
@@ -110,29 +157,46 @@ Ejemplo con opciones:
 
 1. [QUIZ Experimental Methods](https://forms.gle/sXjYpAZAj86CfNSu5)
 
-2. 
+2. 2/3 del Promedio:
 
     - Versión A:
 
-        a.
+        a. Realizar un Fetch del repositorio de GitHub.
+
+        b. A la constante `NAME_IN_URL = 'guess_2_3'` agregar su primer nombre y primer apellido dentro de las comillas, pero evitando quitar el nombre original, es decir agregándolo al final.
+
+        c. Cambiar el valor de la constante `VALOR_MAXIMO` para que sea 100.
+
+        d. Definir el tipo de dato que recibirá la variable `dos_tercios_promedio` como `models.FloatField()`. Esto para poder recibir números decimales.
+
+        e. Definir el tipo de dato que recibirán las variables `mejor_estimacion` y `n_ganadores` como `models.IntegerField()`. Esto para poder recibir solo números enteros.
+
+        f. Agregar `group.n_ganadores` en el pago de los jugadores, es decir en la terminación de `p.payoff` que se encuentra al final de la función `set_payoffs`.
 
     ---
 
     - Versión B:
 
-        a.
+        a. Realizar un Fetch del repositorio de GitHub.
 
+        b. A la constante `NAME_IN_URL = 'guess_2_3'` agregar su primer nombre y primer apellido dentro de las comillas, pero evitando quitar el nombre original, es decir agregándolo al final.
 
+        c. Definir el valor de la constante `BOTE_GANANCIAS` en 10000.
 
+        d. La variable `estimacion` debe contar con un `min`, `max` y `label`, en ese orden para poder ser utilizada en el formulario de entrada.
+
+        e. Asignarle el valor inicial como falso a la variable booleana `es_ganador` usando `initial = False`, con el fin de evitar ganadores prematuros.
+
+        f. En la función `set_payoffs`, asegurarse de que `players` incluya `group.get_players()` en su asignación, para decirle a la app como obtener los jugadores del grupo.
 
 En la siguiente lista se realiza la asignación de la versión a entregar. La asignación se realizó **al azar** y a **cada ID** de le asignó **una versión**: 
 
 <img src="../../imgs/4/Lista_Taller_4.png" style="margin: 20px;">
 
-Dependiendo de la versión asignada, deberás cumplir con las tareas correspondientes a cada una y para una mejor verificación de lo realizado tomar una ScreenShot al finalizar cada inciso, **adjuntar las imágenes con el proyecto creado en un zip al correo designado**.
+Dependiendo de la versión asignada, deberás cumplir con las tareas correspondientes a cada una y para una mejor verificación de lo realizado **tomar una ScreenShot al finalizar cada inciso**, **adjuntar las imágenes con el proyecto creado en un zip al correo designado**. Evitar archivos adicionales en el zip, **solo** debe contener la carpeta del proyecto y las imágenes solicitadas. Verificar que el proyecto enviado tenga los **cambios guardados**.
 
 Enlaces de interés:
 
 - [Apoyo Taller 4]()
 
-- [Rúbrica de calificación]()
+- [Rúbrica de calificación](Rubrica_Taller_2-3_promedio.pdf)

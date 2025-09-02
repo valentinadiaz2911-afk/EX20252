@@ -197,6 +197,6 @@ Dependiendo de la versión asignada, deberás cumplir con las tareas correspondi
 
 Enlaces de interés:
 
-- [Apoyo Taller 4]()
+- [Apoyo Taller 4](https://youtu.be/m5JGYtdwArw)
 
 - [Rúbrica de calificación](Rubrica_Taller_2-3_promedio.pdf)
